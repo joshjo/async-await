@@ -1,3 +1,4 @@
+
 const nodes = [];
 const edges = [];
 
@@ -6,6 +7,10 @@ const pushNode = (id, label) => {
   nodes.push({
     id, label,
   })
+}
+
+const getId = (stringName) => {
+  return stringName.split('/').filter(x => x).pop();
 }
 
 
